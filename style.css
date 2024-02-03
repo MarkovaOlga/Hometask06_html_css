@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 800px);
+    padding-right: calc(50% - 800px);
+
+}
+
+.header {
+    background: #222222;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__buttons__left {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    margin-left: 231px;
+    gap: 41px;
+    width: 111px;
+}
+
+.header__buttons__right {
+    padding-bottom: 20px;
+    padding-top: 26px;
+    margin-right: 240px;
+    display: flex;
+    align-items: flex-end;
+    gap: 33px;
+}
+
+.top__content {
+    background: #F1E4E6;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.title {
+    display: flex;
+    width: 377px;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    margin-top: 289px;
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+}
+
+.subtitle__big {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+    color: #222222;
+}
+
+.subtitle__small {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #222222;
+}
+
+.top__image {
+    padding-right: 64px 
+}
+
+.links {
+    display: grid;
+    
+    justify-content: center;
+    justify-items: start;
+    align-content: center;
+    align-items: start;
+    grid-template-columns: repeat(3, 360px);
+    gap: 30px;
+    padding-top: 65px;
+    padding-bottom: 96px;
+}
+
+.link__item {
+    position: relative;
+}
+
+.link__item__big {
+    position: relative;
+}
+.link__content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.link__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #F16D7F;
+}
+
+.products__item {
+    grid-template-columns: repeat(3, 360px);
+    display: grid;
+    gap: 30px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.product__heading {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 46px;
+}
+.product__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    color: #222222;
+}
+.product__item {
+    background: #F8F8F8
+}
+.products__top_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-top: 6px;
+    color: #9F9F9F;
+}
+.product__item__heading {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+.product__item__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+}
+.product__content {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    padding-top: 23px;
+    padding-bottom: 20px;
+    padding-left: 16px;
+}
+
+.product__item__price {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+.button {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    padding: 15px 39px;
+    background-color: white;
+    border: 2px solid #F26376;
+    margin: 0 auto;
+    display: block;
+    margin-top: 48px;
+    margin-bottom: 60px;
+}
+
+/* img {
+    opacity: 0.5;
+} */
