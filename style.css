@@ -717,6 +717,16 @@ body {
     }
     .footer__copyright {
         width: 347px;
+        height: 143px;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    .social__icons {
+        margin: 43px 114px 40px 114px
+    }
+    .copyright {
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
 }
