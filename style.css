@@ -36,6 +36,14 @@ body {
     gap: 41px;
     width: 111px;
 }
+.header_button:hover {
+    background-color: rgba(222, 180, 135, 0.814);
+    color: white;
+}
+.header_button:active {
+    background-color: rgb(230, 113, 11);
+    color: white;
+}
 
 .header__buttons__right {
     padding-bottom: 20px;
@@ -216,18 +224,24 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
-    padding: 15px 39px;
     background-color: white;
     border: 2px solid #F26376;
     margin: 0 auto;
     display: block;
     margin-top: 48px;
     margin-bottom: 60px;
+    width: 212px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: all 0.3s;
+    animation: heartbeat 1.5s ease-in-out 3s both;
 }
 
-/* img {
-    opacity: 0.5;
-} */
+.button:hover {
+    background-color: purple;
+    color: white;
+}
 
 .footer__info {
     background: #222224;
@@ -248,6 +262,7 @@ body {
     text-align: left;
     color: #FBFBFB;
 }
+
 .info_text {
     font-size: 14px;
     font-weight: 400;
@@ -255,6 +270,7 @@ body {
     text-align: center;
     color: #FBFBFB;
 }
+
 .info {
     display: flex;
     flex-direction: column;
@@ -262,11 +278,16 @@ body {
     justify-content: center;
     align-items: center;
     gap: 16px;
-} 
+}
 
 
 .footer__item {
     height: 448px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .background__item {
@@ -289,18 +310,21 @@ body {
     justify-content: center;
     width: 360px;
 }
+.passage_image {
+    border-radius: 50px;
+}
 
 .passage_text {
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
-    text-align: center; 
+    text-align: center;
     color: #222224;
 }
 
 .subscribe {
     position: absolute;
-    top: 3451px;
+    top: 3400px;
     display: grid;
     align-items: center;
     margin-right: 230px;
@@ -308,13 +332,16 @@ body {
     justify-content: end;
     justify-items: stretch;
     align-content: center;
+    width: 553px;
 }
+
 .subscribe_heading {
     font-size: 24px;
     font-weight: 700;
     line-height: 40px;
     text-align: center;
 }
+
 .subscribe_title {
     font-size: 18px;
     font-weight: 400;
@@ -322,24 +349,50 @@ body {
     text-align: center;
 }
 
-
-/* .subscribe_button {
-    display: block;
-    width: 190px;
+.subscribe_button {
     height: 49px;
-    text-align: center;
-    line-height: 16px;
-    color: #D73C3C;
+    width: 356px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+    margin-top: 32px
+}
+
+.field {
+    width: 256px;
+    background: #E1E1E1;
     font-size: 14px;
-    margin-top:32px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    opacity: 0.67;
+    color: #222224;
+    padding-left: 20px;
+    border: none;
+    border-radius: 50px 0 0 50px;
+}
+
+.button_submite {
+    width: 100px;
+    background: #F16D7F;  
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    display: block;
+    padding-top: 15px;
     transition: all 0.3s;
     animation: heartbeat 1.5s ease-in-out 3s both;
 }
-    
-.subscribe_button:hover {
+.button_submite:hover {
     background-color: purple;
     color: white;
-} */
+}
 
 .footer__copyright {
     background: #222222;
@@ -359,6 +412,7 @@ body {
     color: #FBFBFB;
     margin-left: 235px;
 }
+
 .social__icons {
     display: flex;
     gap: 7px;
@@ -450,6 +504,41 @@ body {
     .button {
         margin-top: 32px;
         margin-bottom: 70px;
+    }
+
+    .footer__info {
+        height: 610px;
+        gap: 48px;
+        flex-direction: column;
+        
+    }
+    .footer__item {
+        height: 584px;
+        width: 736px;
+    }
+    .background__item {
+        height: 614px;
+        width: 736px;
+        object-fit: cover;
+        object-position: 0 0;
+    }
+    .info {
+        width: 360px;
+    }
+    .passage {
+        top: 3644px;
+        margin-left: 204px;
+    }
+    .subscribe {
+        top: 3917px; 
+        margin-left: 105px;
+        justify-content: center;
+    }
+    .copyright {
+        margin-left: 32px;
+    }
+    .social__icons {
+        margin-right: 32px;
     }
 }
 
